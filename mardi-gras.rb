@@ -5,13 +5,13 @@
 class MardiGras < Formula
   desc "Terminal UI for Beads issue tracking — your issues deserve a parade"
   homepage "https://github.com/quietpublish/mardi-gras"
-  version "0.22.0"
+  version "0.24.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.22.0/mardi-gras_0.22.0_darwin_amd64.tar.gz"
-      sha256 "cd7dd68b2749bb6574cacb9bbb323eff8865bfbef2fde281cea45af0bdc8ade1"
+      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.24.0/mardi-gras_0.24.0_darwin_amd64.tar.gz"
+      sha256 "c81861ac5f4e91853fbb4d6974f98a393a981b41a2c07bb5e4cd3f0198b0153e"
 
       define_method(:install) do
         bin.install "mg"
@@ -19,8 +19,8 @@ class MardiGras < Formula
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.22.0/mardi-gras_0.22.0_darwin_arm64.tar.gz"
-      sha256 "340e74088aaa1ba5bf1239281f77a5e5afbb33a43a091f561cde09d4c37feae7"
+      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.24.0/mardi-gras_0.24.0_darwin_arm64.tar.gz"
+      sha256 "cbf53d0e279e4e126d7dd15828d183de4c41b52c3f9b1eb81d9e7ba9d22d3b71"
 
       define_method(:install) do
         bin.install "mg"
@@ -31,16 +31,16 @@ class MardiGras < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.22.0/mardi-gras_0.22.0_linux_amd64.tar.gz"
-      sha256 "fe121b96d428565c7fadf7738c2579b0e848b4bc8176011eaaf506feff8a0547"
+      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.24.0/mardi-gras_0.24.0_linux_amd64.tar.gz"
+      sha256 "dc8e9691def104d808ae62078f6e62816d4f8dbea3babd339496ce277120d713"
       define_method(:install) do
         bin.install "mg"
         man1.install "mg.1"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.22.0/mardi-gras_0.22.0_linux_arm64.tar.gz"
-      sha256 "470532deffb1e763a1a19ade36d30a2e71389a3622dbf1ad9e32f7e57d953f61"
+      url "https://github.com/quietpublish/mardi-gras/releases/download/v0.24.0/mardi-gras_0.24.0_linux_arm64.tar.gz"
+      sha256 "7668b693cdbf3180ae2add36ec0c5ab18519a5b91363c9db138ee75d323816dd"
       define_method(:install) do
         bin.install "mg"
         man1.install "mg.1"
